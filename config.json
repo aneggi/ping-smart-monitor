@@ -1,0 +1,24 @@
+{
+   "hosts": [
+        { 
+            "address": "192.168.2.254",
+            "name" : "Router casa Ale Eolo",
+            "alarm": false
+
+         },
+         { 
+            "address": "192.168.8.100",
+            "name" : "Server Win LM",
+            "alarm": false
+
+         }
+
+   ],
+
+   "pings"  : 5000,
+    "stats" : 100000
+    
+   
+}
+
+
