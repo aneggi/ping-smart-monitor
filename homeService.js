@@ -18,7 +18,7 @@ function createStatus(_pings){
     let _status = { 'host': _pings[0].host, 'name': _pings[0].name ,'status' : 'notcalculated', 'bclass': '' ,'nanswer' : 0 , 'nfailed' : 0   }
     //if(_status.host === "") _status.host = _ping.host;
     _pings.forEach((_ping) => {
-        debug_http(` --> Create status for ${_ping.host} with time to answer of ${_ping.time}...`)
+        //debug_http(` --> Create status for ${_ping.host} with time to answer of ${_ping.time}...`)
         
         if(_ping.alive === true) {
             _status.nanswer++ ;
@@ -62,6 +62,14 @@ module.exports = {
             
         });
         debug_http(` -> Value of status for example - ${resp[0].status} ...`)
+        return resp;
+    },
+    getPings: function (_host) {
+
+        var resp = db.get('pings')
+        .filter({ host: _host })
+        .value()
+        debug_http('Request a /detail/' + _host)
         return resp;
     }
 

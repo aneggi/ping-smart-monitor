@@ -21,6 +21,7 @@ var lastPings  = [];
 var pingCycle = 0;
 
 app.use('/', home);
+//app.use('/detail/', home);
 app.use("/public", express.static(__dirname + '/public'));
 // Check ready to run
 
