@@ -10,7 +10,7 @@ Next steps are:
 - Create alarms with Raspberry and GPIO
 
 
-#INSTALLATION
+# INSTALLATION
 
 1) Download project
 2) Install Node.JS
