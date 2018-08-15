@@ -10,13 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
     "debug": "^3.1.0",
     "express": "^4.16.3",
     "lowdb": "^1.0.0",
-   
-    
+    "mustache": "^2.3.1",
     "ping": "^0.2.2",
-    
     "repeat": "0.0.6"
   }
 }
